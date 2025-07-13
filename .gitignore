@@ -3,6 +3,10 @@ __pycache__/
 *.py[codz]
 *$py.class
 
+# MacOS
+.DS_Store
+
+
 # C extensions
 *.so
 
@@ -140,6 +144,7 @@ celerybeat.pid
 .venv
 env/
 venv/
+VENV/
 ENV/
 env.bak/
 venv.bak/
