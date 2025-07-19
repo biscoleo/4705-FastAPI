@@ -109,7 +109,7 @@ Below I cover how to run this locally with Docker (and without) and how to check
     make run
     ```
     In the terminal, you should see the setup of the Docker image followed by these messages:
-    ![Alt text](readme_photos/Screenshot 2025-07-18 at 18.42.49.png)
+    ![Alt text](readme_photos/start.png)
 
     After running this, the API will be available at:
     http://localhost:8000/docs
@@ -130,7 +130,7 @@ Below I cover how to run this locally with Docker (and without) and how to check
     ##### 'POST' requests
     Moving on from 'GET', we can explore 'POST' which allows us to send information to the API, interact with the sentiment analysis model, and get a result.
     **5.5** With the **/predict** endpoint, we can copy and paste a movie review or write our own to test the model's ability to determine if it is positive or negative.
-    
+
     ![Alt text](readme_photos/predict.png)
 
     **5.6** The last endpoint is a step up from '/predict' --> we can also do **/predict_proba** which tells us the probability that the model assigns to its prediction as being positive or negative.
@@ -139,10 +139,10 @@ Below I cover how to run this locally with Docker (and without) and how to check
 
     **NOTE:** You can also see in the terminal which endpoints you are connecting to while testing them out on Postman:
 
-    ![Alt text](readme_photos/Screenshot 2025-07-18 at 18.42.59.png)
+    ![Alt text](readme_photos/terminal.png)
 
 #### 6. To quit, hit 'Control' + 'C', you can also do make clean to delete the Docker container. It should look something like this:
-![Alt text](readme_photos/Screenshot 2025-07-18 at 18.43.39.png)
+![Alt text](readme_photos/end.png)
 
 
 
