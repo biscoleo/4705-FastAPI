@@ -20,12 +20,11 @@ class SentimentProbabilityResponse(BaseModel):
     sentiment: str
     probabilities: Dict[str, float]
 
-
+# load the model just once at startup
 try:
     model = joblib.load('sentiment_model.pkl')
 except Exception:
     raise HTTPException(status_code=500, detail='Model could not be loaded')
-
 
 
 # read_root from slideshow - i hear this is nice for setting up a friendly welcome or for tutorials
@@ -70,3 +69,4 @@ def predict_with_probability(input: TextInput):
 def get_example():
     random_row = df.sample(1).iloc[0]
     return {'review': random_row['review']}
+
