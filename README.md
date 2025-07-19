@@ -134,6 +134,7 @@ Allow us to retrieve information from the API.
 
 ### 'POST' requests
 Moving on from 'GET' requests, we can explore 'POST' requests which allows us to send information to the API, interact with the sentiment analysis model, and get a result.
+
 **5.5** With the **/predict** endpoint, we can copy and paste a movie review or write our own to test the model's ability to determine if it is positive or negative.
 
 ![Alt text](readme_photos/predict.png)
